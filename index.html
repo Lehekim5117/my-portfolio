@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ilham Hakimi — Software Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Bricolage+Grotesque:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="mesh-bg">
+  <div class="mesh-blob mb1"></div>
+  <div class="mesh-blob mb2"></div>
+  <div class="mesh-blob mb3"></div>
+  <div class="mesh-blob mb4"></div>
+</div>
+<canvas id="particles-canvas"></canvas>
+<div class="noise"></div>
+<div id="cur"></div>
+<div id="cur-trail"></div>
+
+<nav>
+  <a class="nav-logo" href="#hero">
+    <span class="nav-logo-dot"></span>
+    ilhamhakimi
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="nav-hire" href="#contact">Open to Work ✦</a>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left reveal">
+    <div class="hero-eyebrow">
+      <span class="eyebrow-badge">AVAILABLE</span>
+      Seeking <span id="typed-role">Front-End</span><span id="typed-cursor">|</span> Internship · 2026
+    </div>
+    <h1 class="hero-h1">
+      <span class="outline">MUHAMMAD</span>
+      <span class="filled">ILHAM</span>
+      <span class="grad">HAKIMI.</span>
+    </h1>
+    <p class="hero-sub">Software Developer &amp; CS Student</p>
+    <p class="hero-desc">
+      I craft <strong>fast, beautiful interfaces</strong> that live at the intersection of design and engineering. Pixel-obsessed, performance-driven, always learning.
+    </p>
+    <div class="hero-ctas">
+      <a class="btn-glow" href="#projects">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+        View My Work
+      </a>
+      <a class="btn-glass" href="#contact">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Say Hello
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><span class="hstat-n">5+</span><span class="hstat-l">Projects</span></div>
+      <div class="hstat"><span class="hstat-n">2nd</span><span class="hstat-l">Year CS</span></div>
+      <div class="hstat"><span class="hstat-n">5+</span><span class="hstat-l">Technologies</span></div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="floating-card reveal reveal-d2">
+      <div class="fc-header">
+        <div class="fc-avatar">LeheKim.</div>
+        <div>
+          <div class="fc-name">ILHAM HAKIMI</div>
+          <div class="fc-title">CS STUDENT · INTERNSHIP SEEKER</div>
+        </div>
+        <div class="fc-status"><span class="fc-status-dot"></span>AVAILABLE</div>
+      </div>
+      <div class="fc-skills-grid">
+        <div class="fc-skill-chip"><span class="fc-dot d1"></span>C++</div>
+        <div class="fc-skill-chip"><span class="fc-dot d2"></span>HTML / CSS</div>
+        <div class="fc-skill-chip"><span class="fc-dot d3"></span>JavaScript</div>
+        <div class="fc-skill-chip"><span class="fc-dot d4"></span>Java</div>
+      </div>
+      <div class="fc-tags">
+        <span class="fc-tag">React</span>
+        <span class="fc-tag">Next.js</span>
+        <span class="fc-tag">Figma</span>
+        <span class="fc-tag">Git</span>
+        <span class="fc-tag">REST API</span>
+        <span class="fc-tag">Tailwind</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="s-label reveal">01. About Me</div>
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="av-main">
+          <div class="av-initials">LeheKim<span>.</span></div>
+          <div class="av-name">MUHAMMAD ILHAM HAKIMI BIN HAMRI</div>
+          <div class="av-role">COMPUTER SCIENCE · SOFTWARE DEVELOPER</div>
+          <div class="av-chips">
+            <span class="av-chip">Terengganu, MY</span>
+            <span class="av-chip">Year 2</span>
+            <span class="av-chip">Second Class</span>
+          </div>
+        </div>
+        <div class="av-mini-cards">
+          <div class="av-mini reveal reveal-d1">
+            <div class="av-mini-n">5+</div>
+            <div class="av-mini-l">Projects</div>
+          </div>
+          <div class="av-mini reveal reveal-d2">
+            <div class="av-mini-n">3.3+</div>
+            <div class="av-mini-l">CGPA</div>
+          </div>
+          <div class="av-mini reveal reveal-d3">
+            <div class="av-mini-n">0</div>
+            <div class="av-mini-l">Frameworks</div>
+          </div>
+          <div class="av-mini reveal reveal-d4">
+            <div class="av-mini-n">∞</div>
+            <div class="av-mini-l">Kopi</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text reveal reveal-d1">
+        <h2 class="s-title">I build the<br>web that <em>wows.</em></h2>
+        <p>Hey! I'm <strong>MUHAMMAD ILHAM HAKIMI</strong> — a 2nd-year Computer Science student from Terengganu, Malaysia with a genuine obsession for front-end development. I believe great interfaces aren't just functional. They feel alive.</p>
+        <p>My sweet spot is the space between <strong>design and code</strong>: turning wireframes and mockups into pixel-perfect, performant, and accessible web experiences. I care deeply about the small details — the right easing curve, the perfect spacing, the micro-interaction that makes users smile.</p>
+        <p>I'm actively seeking a <strong>software development internship</strong> where I can contribute real impact, grow alongside a passionate team, and ship products millions of people use.</p>
+        <div class="about-info">
+          <div class="ai-item"><div class="ai-label">Diploma</div><div class="ai-val">Computer Science</div></div>
+          <div class="ai-item"><div class="ai-label">Location</div><div class="ai-val">Terengganu, Malaysia</div></div>
+          <div class="ai-item"><div class="ai-label">Focus</div><div class="ai-val">Software Development</div></div>
+          <div class="ai-item"><div class="ai-label">Status</div><div class="ai-val" style="color:var(--t1);">● Open to Internship</div></div>
+        </div>
+        <a class="btn-glow" href="Muhammad_Ilham_Hakimi_Resume.pdf" download="Muhammad_Ilham_Hakimi_Resume.pdf" style="display:inline-flex;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Download CV
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="wrap">
+    <div class="s-label reveal">02. Skills &amp; Stack</div>
+    <div class="skills-layout">
+      <div class="skills-left reveal">
+        <h2 class="s-title">Tools &amp;<br>Technologies.</h2>
+        <p class="s-sub">Technologies and programming languages I have applied across academic projects and personal development.</p>
+        <div class="skills-feat-card">
+          <div class="sfc-icon">🎯</div>
+          <div class="sfc-title">Core Specialities</div>
+          <div class="sfc-desc">Building responsive web interfaces, object-oriented software development (Java/C++), and relational database modeling.</div>
+          <span class="sfc-tag">Software &amp; Web Development</span>
+        </div>
+      </div>
+      <div class="skills-right">
+        
+        <!-- Group 1: Programming Languages -->
+        <div class="sk-group reveal">
+          <div class="sk-group-header">
+            <div class="sk-icon purple">⚡</div>
+            <div class="sk-group-title">Programming Languages</div>
+          </div>
+          <div class="fc-tags">
+            <span class="fc-tag">Java</span>
+            <span class="fc-tag">C++</span>
+            <span class="fc-tag">JavaScript</span>
+            <span class="fc-tag">Python</span>
+            <span class="fc-tag">VB.NET</span>
+            <span class="fc-tag">HTML5 / CSS3</span>
+          </div>
+        </div>
+        <!-- Group 2: Database & Systems -->
+        <div class="sk-group reveal reveal-d1">
+          <div class="sk-group-header">
+            <div class="sk-icon teal">🛠️</div>
+            <div class="sk-group-title">Database &amp; Systems</div>
+          </div>
+          <div class="fc-tags">
+            <span class="fc-tag">MySQL / SQL</span>
+            <span class="fc-tag">ERD Diagramming</span>
+            <span class="fc-tag">Database Normalization</span>
+            <span class="fc-tag">REST APIs</span>
+            <span class="fc-tag">Arduino / Embedded Systems</span>
+          </div>
+        </div>
+        <!-- Group 3: Tools & Methodologies -->
+        <div class="sk-group reveal reveal-d2">
+          <div class="sk-group-header">
+            <div class="sk-icon pink">🎨</div>
+            <div class="sk-group-title">Tools &amp; Learning Stack</div>
+          </div>
+          <div class="fc-tags">
+            <span class="fc-tag">Git &amp; GitHub</span>
+            <span class="fc-tag">VS Code</span>
+            <span class="fc-tag">Figma</span>
+            <span class="fc-tag">Tailwind CSS (Learning)</span>
+            <span class="fc-tag">React.js (Learning)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="wrap">
+    <div class="proj-header-row">
+      <div><div class="s-label reveal">03. Projects</div><h2 class="s-title reveal">Things I've<br>shipped.</h2></div>
+    </div>
+    <div class="proj-featured">
+      <div class="proj-card reveal">
+        <div class="proj-thumb">
+          <div class="proj-thumb-bg" style="background:linear-gradient(135deg,rgba(124,106,255,0.3),rgba(244,114,182,0.15));"></div>
+          <div class="proj-thumb-tags"><span class="proj-thumb-tag">React</span><span class="proj-thumb-tag">Tailwind</span><span class="proj-thumb-tag">REST API</span></div>
+          <div class="proj-thumb-icon">🛒</div>
+          <div class="proj-thumb-num">01</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-title">ShopEase — E-Commerce UI</div>
+          <div class="proj-desc">A fully responsive e-commerce front-end with product filtering, cart management, animated transitions, and a smooth checkout flow.</div>
+          <div class="proj-links"><a class="proj-link" href="projects/shopease/index.html" target="_blank">Live Demo →</a></div>
+        </div>
+      </div>
+      <div class="proj-card reveal reveal-d1">
+        <div class="proj-thumb">
+          <div class="proj-thumb-bg" style="background:linear-gradient(135deg,rgba(45,212,191,0.25),rgba(96,165,250,0.15));"></div>
+          <div class="proj-thumb-tags"><span class="proj-thumb-tag">HTML/CSS</span><span class="proj-thumb-tag">JavaScript</span><span class="proj-thumb-tag">Chart.js</span></div>
+          <div class="proj-thumb-icon">📊</div>
+          <div class="proj-thumb-num">02</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-title">StudyTrack — Dashboard</div>
+          <div class="proj-desc">Student productivity dashboard with real-time GPA tracking, assignment deadlines, and study statistics visualised with animated charts.</div>
+          <div class="proj-links"><a class="proj-link" href="https://newstudytrack.netlify.app/" target="_blank">Live Demo →</a></div>
+        </div>
+      </div>
+      <div class="proj-card reveal reveal-d2">
+        <div class="proj-thumb">
+          <div class="proj-thumb-bg" style="background:linear-gradient(135deg,rgba(244,114,182,0.25),rgba(251,146,60,0.15));"></div>
+          <div class="proj-thumb-tags"><span class="proj-thumb-tag">HTML/CSS/JS</span><span class="proj-thumb-tag">LocalStorage</span><span class="proj-thumb-tag">Tabler Icons</span></div>
+          <div class="proj-thumb-icon">🥗</div>
+          <div class="proj-thumb-num">03</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-title">Calorie Journal</div>
+          <div class="proj-desc">A clean, offline-first calorie tracker with daily, weekly & monthly views. Visual progress bars, category filters, and automatic localStorage persistence.</div>
+          <div class="proj-links"><a class="proj-link" href="https://caloriestrackerbylehekim.netlify.app/" target="_blank">Live Demo →</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="proj-small-grid">
+      <div class="proj-card proj-small reveal">
+        <div class="proj-thumb"><div class="proj-thumb-bg" style="background:linear-gradient(135deg,rgba(244,114,182,0.2),rgba(251,113,133,0.1));"></div><div class="proj-thumb-tags"><span class="proj-thumb-tag">HTML/CSS/JS</span><span class="proj-thumb-tag">WeatherAPI</span></div><div class="proj-thumb-icon">🌤️</div><div class="proj-thumb-num">04</div></div>
+        <div class="proj-body"><div class="proj-title">WeatherNow</div><div class="proj-desc">Real-time weather app with animated icons and 5-day forecast.</div><div class="proj-links"><a class="proj-link" href="https://weatherdemobylehekim.netlify.app/" target="_blank">Live →</a></div></div>
+      </div>
+      <div class="proj-card proj-small reveal reveal-d1">
+        <div class="proj-thumb"><div class="proj-thumb-bg" style="background:linear-gradient(135deg,rgba(96,165,250,0.2),rgba(129,140,248,0.1));"></div><div class="proj-thumb-tags"><span class="proj-thumb-tag">HTML/CSS/JS</span><span class="proj-thumb-tag">LocalStorage</span><span class="proj-thumb-tag">Drag & Drop API</span></div><div class="proj-thumb-icon">✅</div><div class="proj-thumb-num">05</div></div>
+        <div class="proj-body"><div class="proj-title">Taskly</div><div class="proj-desc">Minimal task manager with drag-and-drop and confetti.</div><div class="proj-links"><a class="proj-link" href="https://tasklybylehekim.netlify.app/" target="_blank">Live →</a></div></div>
+      </div>
+      <div class="proj-card proj-small reveal reveal-d2">
+        <div class="proj-card proj-small reveal reveal-d2">
+        <div class="proj-thumb">
+          <div class="proj-thumb-bg" style="background:linear-gradient(135deg,rgba(245,200,66,0.2),rgba(240,98,146,0.15));"></div>
+          <div class="proj-thumb-tags"><span class="proj-thumb-tag">HTML/CSS/JS</span><span class="proj-thumb-tag">LocalStorage</span></div>
+          <div class="proj-thumb-icon" style="font-size:2.5rem;">🎂</div>
+          <div class="proj-thumb-num" style="font-size:5rem;">06</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-title">Birthday Builder</div>
+          <div class="proj-desc">Interactive birthday card with music player, envelope wishes, photo gallery, and full edit/save system. Completely customizable.</div>
+          <div class="proj-links"><a class="proj-link" href="https://birthdaybuilderbylehekim.netlify.app/" target="_blank">Live Demo →</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="wrap">
+    <div class="s-label reveal">04. Education &amp; Journey</div>
+    <h2 class="s-title reveal">My path<br>so far.</h2>
+    <div class="timeline">
+      <div class="tl-item reveal"><div class="tl-dot active"></div><div class="tl-date">2023 – Present</div><div class="tl-card"><div class="tl-title">Diploma in Computer Science</div><div class="tl-place">Universiti Teknologi MARA (UiTM) · Terengganu, Malaysia</div><div class="tl-desc">Specialising in software engineering and web technologies. Consistent Dean's List student with a CGPA of 3.8+.</div><div class="tl-badges"><span class="tl-badge">Second Class</span><span class="tl-badge">CGPA 3.3+</span><span class="tl-badge">Web Dev Club</span></div></div></div>
+      <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-date">2022</div><div class="tl-card"><div class="tl-title">SPM — Sijil Pelajaran Malaysia</div><div class="tl-place">SMK Chukai · Terengganu, Malaysia</div><div class="tl-desc">Completed secondary education with excellent results in Mathematics, Additional Mathematics, and Computer Science subjects.</div><div class="tl-badges"><span class="tl-badge">Excellent Results</span><span class="tl-badge">Computer Science</span></div></div></div>
+      <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-date">2021</div><div class="tl-card"><div class="tl-title">First Line of Code</div><div class="tl-place">Self-Taught · Online</div><div class="tl-desc">Started learning HTML and CSS through YouTube tutorials, fell in love with building things on the web.</div><div class="tl-badges"><span class="tl-badge">HTML/CSS</span><span class="tl-badge">Self-Taught</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="contact-wrap">
+    <div class="s-label reveal" style="justify-content:center;">05. Contact</div>
+    <h2 class="s-title reveal" style="text-align:center;">Let's build<br>something great.</h2>
+    <p class="s-sub reveal" style="margin:1rem auto 3rem;text-align:center;">I'm actively looking for software development internship opportunities. If you have a role or just want to say hi, my inbox is always open.</p>
+    <div class="contact-glow reveal"><div class="cg-ring"></div><div class="cg-ring"></div><div class="cg-ring"></div><div class="cg-center">✦</div></div>
+    <a class="contact-email reveal" href="mailto:ilhamhamri76@gmail.com">ilhamhamri76@gmail.com</a>
+    <div class="socials reveal">
+      <a class="soc-btn" href="resume.pdf" download="Muhammad_Ilham_Hakimi_Resume.pdf">Download CV</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap">
+  <span>© 2025 Muhammad Ilham Hakimi bin Hamri</span>
+  <span>Designed &amp; Built with ♥ in Terengganu</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
